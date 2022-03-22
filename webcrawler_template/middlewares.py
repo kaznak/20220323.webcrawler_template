@@ -53,7 +53,7 @@ class WebcrawlerTemplateSpiderMiddleware:
             yield r
 
     def spider_opened(self, spider):
-        spider.logger.info('Spider opened: %s' % spider.name)
+        spider.logger.info("Spider opened: %s" % spider.name)
 
 
 class WebcrawlerTemplateDownloaderMiddleware:
@@ -100,4 +100,4 @@ class WebcrawlerTemplateDownloaderMiddleware:
         pass
 
     def spider_opened(self, spider):
-        spider.logger.info('Spider opened: %s' % spider.name)
+        spider.logger.info("Spider opened: %s" % spider.name)
